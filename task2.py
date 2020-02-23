@@ -33,7 +33,7 @@ def reaction(tw_object, path):
               "printing whole dictionary and 'continue' for continue searching.")
         decision = taking_decision()
         if decision == "printing":
-            print(tw_object)
+            print("Result ", tw_object)
             return "Get out of the loop"
 
         elif decision == "continue":
@@ -57,7 +57,7 @@ def reaction(tw_object, path):
               "printing whole list and 'continue' for continue searching.")
         decision = taking_decision()
         if decision == "printing":
-            print(tw_object)
+            print("Result ", tw_object)
             return "Get out of the loop"
 
         elif decision == "continue":
@@ -171,7 +171,7 @@ while True:
             previous_object = next_object
             if type(previous_object) != dict and type(previous_object) != list:
                 if previous_object != "Get out of the loop":
-                    print(previous_object)
+                    print("Result ", previous_object)
                 break
 
     except urllib.error.HTTPError:
