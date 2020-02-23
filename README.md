@@ -7,6 +7,7 @@ which is given in result of requesting Twitter. The .txt file with this object i
 To start, enter user_name of any Twitter user. You can check information maximum about 15 users per 15 minutes. 
 Program tells you type and length of object, which you examine now. Then you can ask to print this whole 
 object or continue searching inside it. For continue searching choose key from proposed list of keys.
+After every your decision you`ll have your current path in file printed. 
 Enter "STOP" anytime you want to stop running program.
 
 # Example 
