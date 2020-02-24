@@ -1,7 +1,9 @@
 """
 If you want to stop running program, just enter "STOP"
 """
-import urllib.request, urllib.parse, urllib.error
+import urllib.request
+import urllib.parse
+import urllib.error
 import twurl
 import json
 import ssl
@@ -27,10 +29,13 @@ def reaction(tw_object, path):
     object.
     """
     if type(tw_object) == dict:
-        print("Here you have dictionary and there are", len(tw_object), "objects.")
-        print("Do you want to have whole dictionary printed, or continue "
-              "looking for data inside this dictionary? Please enter 'printing' for "
-              "printing whole dictionary and 'continue' for continue searching.")
+        print("Here you have dictionary and there are", 
+              len(tw_object), "objects.")
+        print("Do you want to have whole dictionary" 
+              "printed, or continue looking for data" 
+              "inside this dictionary? Please enter 'printing'"
+              "for printing whole dictionary and 'continue' for"
+              "continue searching.")
         decision = taking_decision()
         if decision == "printing":
             print("Result ", tw_object)
@@ -53,8 +58,9 @@ def reaction(tw_object, path):
     elif type(tw_object) == list:
         print("Here you have list and there are", len(tw_object), "objects.")
         print("Do you want to have whole list printed, or continue "
-              "looking for data inside this list?. Please enter 'printing' for "
-              "printing whole list and 'continue' for continue searching.")
+              "looking for data inside this list?. Please enter "
+              "'printing' for printing whole list and 'continue'"
+              "for continue searching.")
         decision = taking_decision()
         if decision == "printing":
             print("Result ", tw_object)
@@ -63,7 +69,8 @@ def reaction(tw_object, path):
         elif decision == "continue":
             if len(tw_object) > 1:
                 print("Which of the list`s elements do you want to choose? "
-                      "Please, enter number in in range from 1 to {}".format(len(tw_object)))
+                      "Please, enter number in in range from 1 to "
+                      "{}".format(len(tw_object)))
                 choice = taking_choice_lst(len(tw_object))
                 next_branch = tw_object[choice-1]
                 path.append(str(choice))
@@ -134,7 +141,8 @@ def taking_choice_lst(length):
             if choice in range(1, length+1):
                 return choice
             else:
-                print("Please, enter number in range from 1 to {}".format(length))
+                print("Please, enter number in range from "
+                      "1 to {}".format(length))
         except ValueError:
             print("Please, enter number in range from 1 to {}".format(length))
 
@@ -176,3 +184,4 @@ while True:
 
     except urllib.error.HTTPError:
         print("This account does not exist. Try again.")
+        
