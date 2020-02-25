@@ -4,7 +4,8 @@ With module task2.py user can easily navigate in json object (with friends of sp
 which is given in result of requesting Twitter. The .txt file with this object is also created.
 
 # Usage
-To start, enter user_name of any Twitter user. You can check information maximum about 15 users per 15 minutes. 
+To start, input your API-key in module hidden.py. After you run module task2.py, enter user_name of any Twitter user. 
+You can check information maximum about 15 users per 15 minutes. 
 Program tells you type and length of object, which you examine now. Then you can ask to print this whole 
 object or continue searching inside it. For continue searching choose key from proposed list of keys.
 After every your decision you`ll have your current path in file printed. 
