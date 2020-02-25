@@ -31,10 +31,10 @@ def reaction(tw_object, path):
     if type(tw_object) == dict:
         print("Here you have dictionary and there are", 
               len(tw_object), "objects.")
-        print("Do you want to have whole dictionary" 
-              "printed, or continue looking for data" 
-              "inside this dictionary? Please enter 'printing'"
-              "for printing whole dictionary and 'continue' for"
+        print("Do you want to have whole dictionary " 
+              "printed, or continue looking for data " 
+              "inside this dictionary? Please enter 'printing' "
+              "for printing whole dictionary and 'continue' for "
               "continue searching.")
         decision = taking_decision()
         if decision == "printing":
@@ -59,7 +59,7 @@ def reaction(tw_object, path):
         print("Here you have list and there are", len(tw_object), "objects.")
         print("Do you want to have whole list printed, or continue "
               "looking for data inside this list?. Please enter "
-              "'printing' for printing whole list and 'continue'"
+              "'printing' for printing whole list and 'continue' "
               "for continue searching.")
         decision = taking_decision()
         if decision == "printing":
@@ -100,7 +100,7 @@ def taking_decision():
             print("You`ve stopped running program.")
             sys.exit()
         else:
-            print("Please, enter 'printing' for printing whole object"
+            print("Please, enter 'printing' for printing whole object "
                   "or enter 'continue' for continue searching.")
 
 
